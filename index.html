@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhi Raundal — Teerth Realties Director</title>
+<meta name="description" content="Abhi Raundal, Teerth Realties Director, drives future-ready real estate with structured systems, global insights and customer-focused development.">
+<meta name="keywords" content="abhi raundal, abhi raundal teerth, abhi raundal pune, teerth realties pune, teerth realties, teerth realties director, director of teerth realties">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://about.abhiraundalteerth.workers.dev/">
+<meta name="google-site-verification" content="vbuH_i9pAjYHtOJIE30d6-M9JeAuKQ47nGXZjbc1d3k" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0b1f3a;
+  --navy-mid: #122848;
+  --navy-light: #1a3560;
+  --teal: #1a7f8e;
+  --teal-light: #22a8bb;
+  --teal-pale: #e8f6f8;
+  --silver: #c8d8e4;
+  --white: #ffffff;
+  --off-white: #f4f7fa;
+  --text-dark: #0b1f3a;
+  --text-mid: #3d5a7a;
+  --text-light: #6b87a0;
+  --border: rgba(26,127,142,0.2);
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Outfit', sans-serif; background: var(--white); color: var(--text-dark); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--navy);
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.9rem 3rem;
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; color: var(--white); letter-spacing: 0.05em;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.nav-logo span {
+  display: inline-block; width: 6px; height: 6px;
+  background: var(--teal-light); border-radius: 50%;
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  text-decoration: none; font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver);
+  transition: color 0.25s;
+}
+.nav-links a:hover { color: var(--teal-light); }
+
+/* HERO */
+.hero {
+  background: var(--navy);
+  padding: 5.5rem 3rem 3rem;
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem;
+  align-items: center; min-height: 90vh;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -100px; right: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,127,142,0.15) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--teal), var(--teal-light), transparent);
+}
+.hero-eyebrow {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--teal-light);
+  margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem;
+}
+.hero-eyebrow::before {
+  content: ''; display: block; width: 28px; height: 2px; background: var(--teal-light);
+}
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 700; color: var(--white); line-height: 1.05;
+  margin-bottom: 0.6rem;
+}
+.hero-name em { font-style: italic; color: var(--teal-light); display: block; }
+.hero-designation {
+  font-size: 0.82rem; font-weight: 500; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--silver); margin-bottom: 1.5rem;
+}
+.hero-intro {
+  font-size: 1rem; line-height: 1.75; color: rgba(200,216,228,0.75);
+  max-width: 500px; margin-bottom: 2rem;
+}
+.hero-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--teal); color: var(--white);
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  padding: 0.75rem 1.8rem; border-radius: 2px;
+  transition: background 0.25s, transform 0.2s;
+}
+.hero-btn:hover { background: var(--teal-light); transform: translateY(-1px); }
+.hero-btn::after { content: '↓'; }
+
+.hero-right {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(26,127,142,0.25);
+  border-radius: 4px;
+  padding: 2rem;
+}
+.hero-quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-style: italic; font-weight: 400;
+  color: var(--white); line-height: 1.65;
+  border-left: 3px solid var(--teal-light); padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero-stats {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: rgba(26,127,142,0.2); border-radius: 2px; overflow: hidden;
+}
+.hero-stat {
+  background: rgba(11,31,58,0.8); padding: 1.2rem 1rem;
+}
+.hero-stat-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 600; color: var(--teal-light);
+  line-height: 1; margin-bottom: 0.3rem;
+}
+.hero-stat-lbl {
+  font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--silver); opacity: 0.7;
+}
+
+/* SHARED SECTION STYLES */
+.section-eyebrow {
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--teal);
+  display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;
+}
+.section-eyebrow::before {
+  content: ''; display: block; width: 22px; height: 2px; background: var(--teal);
+}
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: 1rem;
+}
+.body-text {
+  font-size: 0.95rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 0.9rem;
+}
+
+/* ABOUT */
+.about {
+  background: var(--off-white);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+}
+.about-col {
+  padding: 3.5rem 3rem;
+}
+.about-col:first-child { border-right: 1px solid var(--border); }
+
+.edu-card {
+  background: var(--navy); border-radius: 4px;
+  padding: 1.4rem 1.5rem; margin-top: 1.5rem;
+  display: flex; align-items: flex-start; gap: 1rem;
+}
+.edu-icon { font-size: 1.6rem; line-height: 1; flex-shrink: 0; }
+.edu-info strong {
+  display: block; font-size: 0.88rem; font-weight: 600;
+  color: var(--white); margin-bottom: 0.2rem;
+}
+.edu-info span { font-size: 0.78rem; color: var(--silver); }
+
+/* APPROACH STRIP */
+.approach-strip {
+  background: var(--teal);
+  padding: 2rem 3rem;
+  display: flex; align-items: center; gap: 3rem;
+}
+.approach-strip-label {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: rgba(255,255,255,0.7);
+  white-space: nowrap;
+}
+.approach-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.approach-tag {
+  background: rgba(255,255,255,0.15); color: var(--white);
+  font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.9rem;
+  border-radius: 100px; border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* PILLARS */
+.pillars { background: var(--white); padding: 3.5rem 3rem; }
+.pillars-top {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  margin-bottom: 2rem; gap: 2rem;
+}
+.pillars-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+}
+.pillar {
+  border: 1px solid var(--border); border-radius: 4px;
+  padding: 1.8rem 1.5rem;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  background: var(--white);
+}
+.pillar:hover {
+  border-color: var(--teal);
+  box-shadow: 0 4px 24px rgba(26,127,142,0.1);
+  transform: translateY(-3px);
+}
+.pillar-icon {
+  width: 40px; height: 40px; background: var(--teal-pale);
+  border-radius: 8px; display: flex; align-items: center;
+  justify-content: center; font-size: 1.1rem; margin-bottom: 1rem;
+}
+.pillar-num {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 0.5rem;
+}
+.pillar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 600; color: var(--navy);
+  margin-bottom: 0.7rem; line-height: 1.3;
+}
+.pillar-text { font-size: 0.86rem; line-height: 1.72; color: var(--text-mid); }
+
+/* MARKET SECTION */
+.market {
+  background: var(--navy-mid);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+}
+.market-left { padding: 3.5rem 3rem; border-right: 1px solid rgba(26,127,142,0.2); }
+.market-right { padding: 3.5rem 3rem; }
+
+.market-left .section-heading { color: var(--white); }
+.market-right .section-heading { color: var(--white); }
+.market-left .section-eyebrow { color: var(--teal-light); }
+.market-right .section-eyebrow { color: var(--teal-light); }
+.market-left .section-eyebrow::before { background: var(--teal-light); }
+.market-right .section-eyebrow::before { background: var(--teal-light); }
+.market-left .body-text { color: rgba(200,216,228,0.75); }
+.market-right .body-text { color: rgba(200,216,228,0.75); }
+
+/* VISION */
+.vision { background: var(--off-white); padding: 3.5rem 3rem; }
+.vision-inner {
+  display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3rem; align-items: start;
+}
+.vision-points { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.vision-point {
+  display: flex; gap: 1rem; align-items: flex-start;
+  padding: 1rem 1.2rem; background: var(--white);
+  border: 1px solid var(--border); border-radius: 4px;
+  transition: border-color 0.25s;
+}
+.vision-point:hover { border-color: var(--teal); }
+.vision-point-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 600; color: var(--teal);
+  flex-shrink: 0; line-height: 1; margin-top: 0.1rem;
+}
+.vision-point-title {
+  font-size: 0.82rem; font-weight: 600; color: var(--navy);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem;
+}
+.vision-point-text { font-size: 0.88rem; line-height: 1.65; color: var(--text-mid); }
+
+.vision-highlight {
+  background: var(--navy); border-radius: 4px; padding: 2rem;
+  display: flex; flex-direction: column; gap: 1.2rem;
+}
+.vh-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; font-weight: 600; font-style: italic;
+  color: var(--teal-light); margin-bottom: 0.3rem;
+}
+.vh-text { font-size: 0.9rem; line-height: 1.7; color: rgba(200,216,228,0.75); }
+.vh-divider { height: 1px; background: rgba(26,127,142,0.25); }
+
+/* FAQ */
+.faq { background: var(--white); padding: 3.5rem 3rem; }
+.faq-inner { max-width: 800px; margin: 0 auto; }
+.faq-header { margin-bottom: 2rem; }
+.faq-list { display: flex; flex-direction: column; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-item:first-of-type { border-top: 1px solid var(--border); }
+.faq-q {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.1rem 0; cursor: pointer; gap: 1rem;
+}
+.faq-q-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 600; color: var(--navy);
+}
+.faq-icon {
+  width: 26px; height: 26px; background: var(--teal-pale);
+  border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; font-size: 1rem; color: var(--teal);
+  flex-shrink: 0; font-weight: 300; transition: background 0.25s, transform 0.3s;
+}
+.faq-item.open .faq-icon { background: var(--teal); color: var(--white); transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.faq-a-inner {
+  padding: 0 0 1.1rem;
+  font-size: 0.9rem; line-height: 1.75; color: var(--text-mid);
+}
+.faq-item.open .faq-a { max-height: 150px; }
+
+/* FOOTER */
+footer {
+  background: var(--navy);
+  padding: 2.5rem 3rem;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 2rem;
+}
+.footer-left {}
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 0.25rem;
+}
+.footer-sub {
+  font-size: 0.76rem; font-weight: 400; letter-spacing: 0.1em;
+  color: var(--silver); opacity: 0.65;
+}
+.footer-right {
+  text-align: right;
+  font-size: 0.75rem; color: rgba(200,216,228,0.4); letter-spacing: 0.06em;
+}
+.footer-accent {
+  display: inline-block; width: 32px; height: 2px;
+  background: var(--teal-light); margin-bottom: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  nav { padding: 0.9rem 1.2rem; }
+  .nav-links { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 5rem 1.2rem 2rem; min-height: auto; gap: 1.5rem; }
+  .about { grid-template-columns: 1fr; }
+  .about-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+  .about-col { padding: 2.5rem 1.2rem; }
+  .approach-strip { flex-direction: column; gap: 1rem; padding: 1.5rem 1.2rem; }
+  .pillars { padding: 2.5rem 1.2rem; }
+  .pillars-top { flex-direction: column; align-items: flex-start; }
+  .pillars-grid { grid-template-columns: 1fr 1fr; }
+  .market { grid-template-columns: 1fr; }
+  .market-left, .market-right { padding: 2.5rem 1.2rem; }
+  .market-left { border-right: none; border-bottom: 1px solid rgba(26,127,142,0.2); }
+  .vision { padding: 2.5rem 1.2rem; }
+  .vision-inner { grid-template-columns: 1fr; }
+  .faq { padding: 2.5rem 1.2rem; }
+  footer { flex-direction: column; text-align: center; padding: 2rem 1.2rem; }
+  .footer-right { text-align: center; }
+}
+@media (max-width: 600px) {
+  .pillars-grid { grid-template-columns: 1fr; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><span></span> Teerth Realties</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#pillars">Pillars</a></li>
+    <li><a href="#market">Market</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Director · Teerth Realties · Pune</div>
+    <h1 class="hero-name">Abhi <em>Raundal</em></h1>
+    <p class="hero-designation">Director, Teerth Realties</p>
+    <p class="hero-intro">
+      The real estate industry is undergoing a significant shift, where success is no longer defined by scale alone but by efficiency, planning, and long-term value creation. Abhi Raundal reflects this evolution through a structured and forward-looking approach to real estate development.
+    </p>
+    <a href="#about" class="hero-btn">Explore His Approach</a>
+  </div>
+  <div class="hero-right">
+    <p class="hero-quote-text">
+      "Real estate is no longer just about delivering units — it is about creating spaces that offer functionality, comfort, and long-term usability."
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-val">MSc</div>
+        <div class="hero-stat-lbl">Univ. of Westminster</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">360°</div>
+        <div class="hero-stat-lbl">Operational Oversight</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">RERA</div>
+        <div class="hero-stat-lbl">Compliant Practices</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">Pune</div>
+        <div class="hero-stat-lbl">Market Focus</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-col">
+    <div class="section-eyebrow">Role & Responsibilities</div>
+    <h2 class="section-heading">From Vision to Execution</h2>
+    <p class="body-text">At Teerth Realties, Abhi Raundal is deeply involved in core operational and strategic functions, including planning, marketing, sales, procurement, and coordination. His contribution lies in connecting these functions into a cohesive system that supports efficient project execution.</p>
+    <p class="body-text">By ensuring that every stage of development is aligned with broader business objectives, he helps create a more streamlined and reliable development process. This hands-on involvement enables better decision-making and consistency across projects.</p>
+  </div>
+  <div class="about-col">
+    <div class="section-eyebrow">Global Education</div>
+    <h2 class="section-heading">The Influence of Global Education on Real Estate Thinking</h2>
+    <p class="body-text">A significant element shaping his professional outlook is his academic background in real estate development from the University of Westminster. This exposure provides an understanding of global urban development trends, project lifecycle management, and structured planning approaches.</p>
+    <p class="body-text">Such a foundation allows for a more analytical perspective when evaluating projects. Instead of focusing only on immediate outcomes, the emphasis is on long-term usability, efficiency, and alignment with future growth patterns.</p>
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-info">
+        <strong>Master's in Real Estate Development</strong>
+        <span>University of Westminster, London</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH STRIP -->
+<div class="approach-strip">
+  <div class="approach-strip-label">Core Functions Overseen</div>
+  <div class="approach-tags">
+    <span class="approach-tag">Planning</span>
+    <span class="approach-tag">Marketing</span>
+    <span class="approach-tag">Sales</span>
+    <span class="approach-tag">Procurement</span>
+    <span class="approach-tag">Coordination</span>
+    <span class="approach-tag">Compliance</span>
+    <span class="approach-tag">Design Integration</span>
+  </div>
+</div>
+
+<!-- PILLARS -->
+<section class="pillars" id="pillars">
+  <div class="pillars-top">
+    <div>
+      <div class="section-eyebrow">Key Focus Areas</div>
+      <h2 class="section-heading">Creating Structure in a Complex Industry</h2>
+    </div>
+    <p style="max-width:420px; font-size:0.9rem; line-height:1.75; color:var(--text-mid);">Real estate development involves multiple layers of coordination, from approvals and design to construction and delivery. Without structured systems, this complexity can lead to inefficiencies and delays.</p>
+  </div>
+  <div class="pillars-grid">
+    <div class="pillar">
+      <div class="pillar-icon">⚙️</div>
+      <div class="pillar-num">01 — Systems</div>
+      <div class="pillar-title">Structured Systems</div>
+      <p class="pillar-text">Introducing organized processes and improving internal coordination for a more predictable and efficient development cycle. This system-driven approach improves operational performance and project reliability.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">📋</div>
+      <div class="pillar-num">02 — Compliance</div>
+      <div class="pillar-title">Regulatory Alignment</div>
+      <p class="pillar-text">The introduction of RERA has reshaped real estate operations. Transparency, accountability, and compliance are integrated into everyday operations, building trust among buyers in an increasingly informed market.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🏡</div>
+      <div class="pillar-num">03 — Buyers</div>
+      <div class="pillar-title">Evolving Buyer Expectations</div>
+      <p class="pillar-text">The modern homebuyer is more informed, research-driven, and focused on long-term value. Location, connectivity, design, and developer credibility all play a significant role in decision-making.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">✏️</div>
+      <div class="pillar-num">04 — Design</div>
+      <div class="pillar-title">Design Thinking</div>
+      <p class="pillar-text">Efficient layouts, optimal space utilization, and attention to detail significantly influence property value. Both functional and aesthetic aspects are considered to meet the needs of modern urban living.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARKET -->
+<section class="market" id="market">
+  <div class="market-left">
+    <div class="section-eyebrow">Market Context</div>
+    <h2 class="section-heading">Adapting to a Transparent and Regulated Market</h2>
+    <p class="body-text">The introduction of regulatory frameworks such as RERA has reshaped how real estate businesses operate. Transparency, accountability, and compliance have become essential components of the development process.</p>
+    <p class="body-text">In this environment, aligning business practices with regulatory requirements is crucial. Abhi Raundal's approach emphasizes the importance of adapting to these changes by integrating compliance into everyday operations. This not only supports smoother project execution but also builds trust among buyers in an increasingly informed market.</p>
+  </div>
+  <div class="market-right">
+    <div class="section-eyebrow">New Age Leadership</div>
+    <h2 class="section-heading">Why Abhi Raundal Represents New Age Real Estate Leadership</h2>
+    <p class="body-text">In a competitive and dynamic market like Pune, leadership that combines planning with execution is essential. Abhi Raundal represents a new generation of professionals who bring structure, clarity, and adaptability to real estate development.</p>
+    <p class="body-text">His ability to understand market needs, implement efficient systems, and focus on customer-centric development makes him a noteworthy contributor to the industry. As Pune continues to expand, such approaches will play a key role in shaping its real estate future.</p>
+  </div>
+</section>
+
+<!-- VISION -->
+<section class="vision" id="vision">
+  <div class="vision-inner">
+    <div>
+      <div class="section-eyebrow">Looking Ahead</div>
+      <h2 class="section-heading">A Structured Vision for Growth</h2>
+      <p class="body-text">As the real estate sector continues to evolve, the focus is shifting toward more organized, sustainable, and technology-driven development. Developers are increasingly required to adapt to changing market conditions while maintaining consistency in quality and delivery.</p>
+      <p class="body-text">Abhi Raundal envisions growth that is supported by strong internal systems, transparent practices, and a commitment to long-term value. This forward-looking approach positions Teerth Realties to navigate future opportunities effectively.</p>
+      <div class="vision-points">
+        <div class="vision-point">
+          <div class="vision-point-num">1</div>
+          <div>
+            <div class="vision-point-title">Strong Internal Systems</div>
+            <div class="vision-point-text">Streamlined workflows and cross-team communication for predictable delivery.</div>
+          </div>
+        </div>
+        <div class="vision-point">
+          <div class="vision-point-num">2</div>
+          <div>
+            <div class="vision-point-title">Transparent Practices</div>
+            <div class="vision-point-text">Regulatory compliance built into everyday operations to build buyer trust.</div>
+          </div>
+        </div>
+        <div class="vision-point">
+          <div class="vision-point-num">3</div>
+          <div>
+            <div class="vision-point-title">Long-Term Value</div>
+            <div class="vision-point-text">Development strategies focused on usability, sustainability, and future growth.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vision-highlight">
+      <div>
+        <div class="vh-title">The Role of Design in Modern Real Estate Development</div>
+        <p class="vh-text">An important aspect of his approach is the integration of design thinking into real estate projects. Efficient layouts, optimal space utilization, and attention to detail significantly influence the overall value of a property.</p>
+      </div>
+      <div class="vh-divider"></div>
+      <div>
+        <div class="vh-title">Responding to Evolving Buyer Expectations</div>
+        <p class="vh-text">Recognizing the shift in buyer behavior, Abhi Raundal focuses on aligning development strategies with these expectations. His perspective highlights that real estate is no longer just about delivering units — it is about creating spaces that offer functionality, comfort, and long-term usability.</p>
+      </div>
+      <div class="vh-divider"></div>
+      <div>
+        <div class="vh-title">Sustainability & Technology-Driven Growth</div>
+        <p class="vh-text">By considering both functional and aesthetic aspects, developments can better meet the needs of modern urban living. This focus on design ensures that projects remain relevant and competitive in the long term.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <div class="section-eyebrow">Quick Answers</div>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Who is Abhi Raundal?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Abhi Raundal is the Director of Teerth Realties, actively involved in strategic planning and operational management across all core functions of the organization.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is his role in the company?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">He oversees planning, sales, marketing, and operational systems to ensure efficient project execution.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is his educational qualification?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">He holds a Master's degree in Real Estate Development from the University of Westminster.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What defines his approach to real estate?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">His approach focuses on structured systems, transparency, and long-term value creation.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is his vision for the future?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">He envisions real estate development driven by sustainability, planning, and evolving market needs.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <div class="footer-brand">Teerth Realties</div>
+    <div class="footer-sub">Abhi Raundal · Director · Pune, India</div>
+  </div>
+  <div class="footer-right">
+    <div class="footer-accent"></div>
+    <div>Building the Future of Real Estate</div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
